@@ -3,8 +3,8 @@
   --bg-light: #f8fafc;
   --text: #0f172a;
   --text-muted: #475569;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary: #3bb92a;
+  --primary-hover: #1f8112;
   --card-bg: #ffffff;
   --border: #e5e7eb;
 }
@@ -125,7 +125,8 @@ body {
   margin: 0 auto;
   position: relative;
   top: -25px;
-  /* sobe */
+  color: var(--primary);
+  
 
 }
 
@@ -185,7 +186,7 @@ body {
 }
 
 .social-links a:hover {
-  background: rgb(81, 156, 226);
+  background: #1f8112;
   transform: translateY(-3px);
 }
 
@@ -292,7 +293,7 @@ body {
 
 
 .project-card .project-link:hover {
-  background-color: #574fd6;
+  background-color: #1f8112;
 }
 
 /* CONTATO */
