@@ -125,8 +125,7 @@ body {
   margin: 0 auto;
   position: relative;
   top: -25px;
-  color: var(--primary);
-  
+  /* sobe */
 
 }
 
@@ -196,6 +195,52 @@ body {
 
 .icon-white {
   filter: brightness(0) invert(1);
+}
+
+.container-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icon-item {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon-item img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.icon-item:hover img {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.icon-item:hover .tooltip {
+    opacity: 1;
 }
 
 /* SECTIONS */
@@ -294,6 +339,34 @@ body {
 
 .project-card .project-link:hover {
   background-color: #1f8112;
+}
+
+.project-tech {
+    margin: 12px 0;
+}
+
+.project-tech span {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: #00ff88;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2);
+}
+
+.contact-text {
+    margin: 20px 0;
+    font-size: 16px;
 }
 
 /* CONTATO */
