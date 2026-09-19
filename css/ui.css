@@ -1,0 +1,80 @@
+/* =========================
+   SCROLL PROGRESS BAR
+========================= */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--gradient-signature);
+    z-index: 200;
+    transition: width .12s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-progress {
+        transition: none;
+    }
+}
+
+/* =========================
+   ACTIVE NAV LINK
+========================= */
+
+.nav a.active {
+    color: var(--primary);
+}
+
+.nav a.active::after {
+    width: 100%;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-to-top {
+    position: fixed;
+    right: 1.75rem;
+    bottom: 1.75rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--primary);
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    cursor: pointer;
+    backdrop-filter: blur(15px);
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity .3s, transform .3s, border-color .3s, box-shadow .3s;
+    z-index: 90;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 25px rgba(var(--primary-rgb), .25);
+}
+
+@media (max-width: 600px) {
+    .back-to-top {
+        right: 1.1rem;
+        bottom: 1.1rem;
+        width: 42px;
+        height: 42px;
+    }
+}

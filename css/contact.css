@@ -1,0 +1,60 @@
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    background: radial-gradient(circle at center, rgba(var(--primary-rgb), .08), transparent 40%);
+}
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-social a {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    transition: transform .4s, background .4s, box-shadow .4s;
+}
+
+.contact-social img {
+    width: 32px;
+}
+
+.contact-social a:hover {
+    transform: translateY(-10px);
+    background: var(--primary);
+    box-shadow: 0 15px 35px rgba(var(--primary-rgb), .3);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background: #050810;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: .85rem;
+}
+
+.footer-tagline {
+    margin-top: .5rem;
+    font-size: .75rem;
+    color: var(--text-muted);
+    opacity: .7;
+}
+
+.footer strong {
+    color: var(--primary);
+}
