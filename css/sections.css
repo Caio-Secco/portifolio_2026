@@ -210,13 +210,19 @@
 }
 
 .test-runner.js-armed .run-line {
+
     opacity: 0;
+
     transform: translateX(-10px);
+
 }
 
 .test-runner.js-armed .run-line.visible {
+
     opacity: 1;
+
     transform: translateX(0);
+
 }
 
 .run-label {

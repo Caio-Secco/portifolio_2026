@@ -343,7 +343,7 @@
     animation: scroll 1.5s infinite;
 }
 
-/*
+
 
 @media (prefers-reduced-motion: reduce) {
     .scroll-indicator span::before {
@@ -353,7 +353,7 @@
 
 @media (max-width: 768px) {
     .scroll-indicator span {
-        bottom: -0.2px;
+        bottom: 10px;
         width: 18px;
         height: 30px;
     }
